@@ -1,19 +1,21 @@
 /*
-  Analog input, serial output
-  Reads an analog input pin, prints the result to the Serial Monitor.
-  created 29 Dec. 2008
-  modified 9 Apr 2012
-  by Tom Igoe
-  modified 8 March 2021
-  by Midas Gossye (Whadda/Velleman)
-  Based on Arduino AnalogInOutSerial code
-  This example code is in the public domain.
-  http://www.arduino.cc/en/Tutorial/AnalogInOutSerial
-*/
+  @@@@@@@@@@@@@@@@@@@@@@                                                                                                                               
+  @@@@@@@@@@@@@@@@@@@@@@             @@@.    @@@    @@@.     @@@@    @@@@        @@@@@@@@@        @@@@@@@@@@@@@.     .@@@@@@@@@@@@@        @@@@@@@@@  
+  @@@@@%%@@@%%@@@%%@@@@@             @@@@    @@@    @@@@     @@@@    @@@@       @@@@@@@@@@        @@@@@@@@@@@@@@     @@@@@@@@@@@@@@        @@@@@@@@@  
+  @@@@@  @@@  @@@  @@@@@             @@@@    @@@    @@@@     @@@@    @@@@       @@@@   @@@@        @@@@@   @@@@@       @@@@@   @@@@       @@@@   @@@@ 
+  @@@@@            @@@@@             @@@@   @@@@    @@@@     @@@@@@@@@@@@       @@@@   @@@@        @@@@@   @@@@@       @@@@@   @@@@       @@@@   @@@@ 
+  @@@@@   @    @   @@@@@             @@@@   @@@@    @@@@     @@@@@@@@@@@@       @@@@@@@@@@@        @@@@@   @@@@@       @@@@@   @@@@       @@@@@@@@@@@ 
+  @@@@@            @@@@@             @@@@###@@@@@##@@@@@     @@@@    @@@@      @@@@@@@@@@@@       #@@@@@###@@@@@     ##@@@@@###@@@@       @@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@             @@@@@@@@@@@@@@@@@@@     @@@@    @@@@      @@@@    @@@@@      @@@@@@@@@@@@@@     @@@@@@@@@@@@@@      @@@@     @@@@
+  @@@@@@@@@@@@@@@@@@@@@@
+  
+  Whadda PHOTOSENSITIVE SENSOR MODULE
+  
+ */
 
 // These constants won't change. They're used to give names to the pins used:
 const int digitalInPin = 2;  // Analog input pin that the light sensor is attached to
-const int ledPin = 13;
+const int ledPin = 13; // Digital output pin that the led is attached to
 
 bool sensorValue;        // value read from the light sensor
 
@@ -30,6 +32,7 @@ void loop() {
   // print the results to the Serial Monitor:
   Serial.print("sensor = ");
   Serial.println(sensorValue);
+  // turn the led on or off
   if(sensorValue){
     digitalWrite(ledPin, HIGH);
   }
