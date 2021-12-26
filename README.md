@@ -18,7 +18,7 @@ The example program reads the digital light signal value from the ```A0``` pin o
 * None
 
 ### Wiring diagram
-![](./wiring_diagram_bb.png)
+![](./wiring_diagram_bb2.png)
 
 ## Additional information
   For more information about the Whadda WPSE352 photosensitive sensor module, check the manual available at [whadda.com](https://whadda.com)
