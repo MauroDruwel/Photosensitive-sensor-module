@@ -2,7 +2,7 @@
 
 ## Example 1
 This example shows how you can use the Whadda WPSE352 photosensitive sensor module with an Arduino® compatible board.
-The example program reads the analog light signal value from the ```AO``` pin on the module and prints the result in the serial monitor.
+The example program reads the digital light signal value from the ```D2``` pin on the module and turns on an led.
 
 ### Library dependencies
 * None
@@ -12,7 +12,7 @@ The example program reads the analog light signal value from the ```AO``` pin on
 
 ## Example 2
 This example shows how you can use the Whadda WPSE352 photosensitive sensor module with an Arduino® compatible board.
-The example program reads the digital light signal value from the ```D2``` pin on the module and prints the result in the serial monitor.
+The example program reads the digital light signal value from the ```A0``` pin on the module and prints the result in the serial monitor.
 
 ### Library dependencies
 * None
