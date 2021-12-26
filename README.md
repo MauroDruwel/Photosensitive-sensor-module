@@ -1,4 +1,5 @@
 # WPSE352 photosensitive sensor module
+This repository is based on [the product's repository](https://github.com/WhaddaMakers/Photosensitive-sensor-module)
 
 ## Example 1
 This example shows how you can use the Whadda WPSE352 photosensitive sensor module with an Arduino® compatible board.
